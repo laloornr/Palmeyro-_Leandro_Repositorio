@@ -95,15 +95,16 @@ int main()
                     getche();
                 }
                 else{
-                        if(oper2<=0){
-                                printf("Error. El 2do operando tiene que ser Mayor a 0.");
+                        if(oper2==0){
+                                printf("Error. El 2do operando no puede ser 0.");
                                 getche();
                         }
                         else{
-                            resultado=division(oper1,oper2);
-                            printf("\n\nEl resultado de la division de los operandos es: %.2f",resultado);
-                            getche();
+                                resultado=division(oper1,oper2);
+                                printf("\n\nEl resultado de la division de los operandos es: %.2f",resultado);
+                                getche();
                         }
+
                 }
                 break;
 
@@ -125,8 +126,8 @@ int main()
                     getche();
                 }
                 else{
-                    if(oper2<=0){
-                                printf("Error. El 2do operando tiene que ser Mayor a 0.");
+                    if(oper2==0){
+                                printf("Error. El 2do operando no puede ser 0.");
                                 getche();
                         }
                         else{
