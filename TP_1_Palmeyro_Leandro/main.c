@@ -42,17 +42,17 @@ int main()
 
         switch(opcion)
         {
-            case 1:
+            case 1:             // Operando 1
                     oper1=validarOperando("\n\nIngrese 1er Operando: ");
                     flag1=1;
                 break;
 
-            case 2:
+            case 2:             // Operando 2
                     oper2=validarOperando("\n\nIngrese 2do Operando: ");
                     flag2=1;
                 break;
 
-            case 3:
+            case 3:             //Suma
                 if(validarBanderas(flag1,flag2)==0){
                     printf("\n\nError, Primero debe cargar los 2 operandos.");
                     getche();
@@ -65,7 +65,7 @@ int main()
 
                 break;
 
-            case 4:
+            case 4:             //Resta
                 if(validarBanderas(flag1,flag2)==0){
                     printf("\n\nError, Primero debe cargar los 2 operandos.");
                     getche();
@@ -77,7 +77,7 @@ int main()
                 }
                 break;
 
-            case 5:
+            case 5:             //Multiplicacion
                 if(validarBanderas(flag1,flag2)==0){
                     printf("\n\nError, Primero debe cargar los 2 operandos.");
                     getche();
@@ -89,7 +89,7 @@ int main()
                 }
                 break;
 
-            case 6:
+            case 6:             //Division
                 if(validarBanderas(flag1,flag2)==0){
                     printf("\n\nError, Primero debe cargar los 2 operandos.");
                     getche();
@@ -108,19 +108,26 @@ int main()
                 }
                 break;
 
-            case 7:
+            case 7:             //Factorial
                 if(flag1==0){
                     printf("\n\nError, Primero debe cargar el 1er operando.");
                     getche();
                 }
                 else{
-                        resultado=factorial(oper1);
-                        printf("El Factorial del 1er operando es: %.2f",resultado);
-                        getche();
+                        if(oper1<0){
+                            printf("\nError, El factorial tiene que ser mayor o igual a 0.");
+                            getche();
+                        }
+                        else{
+                            resultado=factorial(oper1);
+                            printf("El Factorial del 1er operando es: %.2f",resultado);
+                            getche();
+                        }
+
                 }
                 break;
 
-            case 8:
+            case 8:             //Todos
                     if(validarBanderas(flag1,flag2)==0){
                     printf("\n\nError, Primero debe cargar los 2 operandos.");
                     getche();
@@ -130,7 +137,11 @@ int main()
                                 printf("Error. El 2do operando no puede ser 0.");
                                 getche();
                         }
-                        else{
+                    else if(oper1<0){
+                            printf("\nError, El factorial tiene que ser mayor o igual a 0.");
+                            getche();
+                    }
+                    else{
                             resultado=suma(oper1,oper2);
                             printf("\n\nEl resultado de la suma de los operandos es: %.2f",resultado);
                             resultado=resta(oper1,oper2);

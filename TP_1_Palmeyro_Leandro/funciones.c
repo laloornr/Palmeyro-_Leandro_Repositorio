@@ -99,9 +99,9 @@ float factorial(float oper1)
 {
     float resultado=1;
     int i;
-    if(oper1!=0)
+    if(oper1>=0)
     {
-        for(i = 1; i<=oper1; i++)
+        for(i = oper1; i>1; i--)
         {
             resultado*=i;
         }
