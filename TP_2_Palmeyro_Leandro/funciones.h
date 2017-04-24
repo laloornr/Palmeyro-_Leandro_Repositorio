@@ -46,11 +46,10 @@ int buscarPorDni(ePersona x[], int dni,int tam);
  */
 void inicializarPersonas(ePersona x[],int tam);
 
-/** \brief
+/** \brief Funcion para agregar un Alumno
  *
- * \param
- * \param
- * \return
+ * \param Estructura para cargar el Alumno
+ * \param Tamaño total de Alumnos a cargar
  *
  */
 void agregarPersona(ePersona x[],int i);
@@ -72,39 +71,33 @@ int validarNombreyApellido(char texto[]);
  */
 int obtenerIndiceDNI(ePersona x[],int dni,int tam);
 
-/** \brief
+/** \brief Borra un Alumno cargado y deja el espacio Libre para usar
  *
- * \param
- * \param
- * \return
- *
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
  */
 void borrarPersona(ePersona x[],int tam);
 
-/** \brief
+/** \brief Imprime Lista de Alumnos
  *
- * \param
- * \param
- * \return
- *
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
  */
 void imprimirLista(ePersona x[],int tam);
 
-/** \brief
+/** \brief Ordena Estructura Por nombre y ante igualdad de nombre por DNI
  *
- * \param
- * \param
- * \return
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
  *
  */
 void ordenarLista(ePersona x[],int tam);
 
-/** \brief
+/** \brief Muestra Grafico Separando grupos por edades
+
  *
- * \param
- * \param
- * \return
- *
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
  */
 void grafico(ePersona x[],int tam);
 
