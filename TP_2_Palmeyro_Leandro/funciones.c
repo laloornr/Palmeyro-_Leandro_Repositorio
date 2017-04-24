@@ -4,6 +4,11 @@
 #include <string.h>
 #include "funciones.h"
 
+/** \brief Inicializa el array en estado sin uso
+ *
+ * \param Estructura a cambiar estado
+ * \param tamaño de la estructura
+ */
 void inicializarPersonas(ePersona x[],int tam)
 {
     int i;
@@ -13,6 +18,11 @@ void inicializarPersonas(ePersona x[],int tam)
     }
 }
 
+/**
+ * Obtiene el primer indice libre del array.
+ * @param lista el array se pasa como parametro.
+ * @return retorna 0 si no encuentra espacio libre, 1 si lo encontro
+ */
 int obtenerEspacioLibre(ePersona x[],int tam)
 {
     int i;
@@ -28,6 +38,13 @@ int obtenerEspacioLibre(ePersona x[],int tam)
     return retorno;
 }
 
+/** \brief Obtiene el Indice que esta libre para ser usado
+ *
+ * \param estructura a buscar indice libre
+ * \param tamaño para recorrer
+ * \return retorna el indice libre
+ *
+ */
 int obtenerIndice(ePersona x[],int tam)
 {
     int i;
@@ -43,6 +60,12 @@ int obtenerIndice(ePersona x[],int tam)
     return retorno;
 }
 
+/** \brief Funcion para agregar un Alumno
+ *
+ * \param Estructura para cargar el Alumno
+ * \param Tamaño total de Alumnos a cargar
+ *
+ */
 void agregarPersona(ePersona x[],int i)
 {
     ePersona eAux;
@@ -97,6 +120,12 @@ void agregarPersona(ePersona x[],int i)
     }
 }
 
+/**
+ * \brief Verifica si el valor recibido contiene solo letras
+ * \param str Array con la cadena a ser analizada
+ * \return 1 si contiene solo ' ' y letras y 0 si no lo es
+ *
+ */
 int validarNombreyApellido(char texto[])
 {
     int i=0;
@@ -111,7 +140,12 @@ int validarNombreyApellido(char texto[])
 }
 
 
-
+/**
+ * Obtiene el indice que coincide con el dni pasado por parametro.
+ * @param lista el array se pasa como parametro.
+ * @param dni el dni a ser buscado en el array.
+ * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
+ */
 int buscarPorDni(ePersona x[], int dni,int tam)
 {
     int i;
@@ -128,6 +162,13 @@ int buscarPorDni(ePersona x[], int dni,int tam)
 
 }
 
+/** \brief Obtiene el Indice que el dni esta ingresado
+ *
+ * \param estructura a buscar indice libre
+ * \param tamaño para recorrer
+ * \return retorna el indice buscado
+ *
+ */
 int obtenerIndiceDNI(ePersona x[],int dni,int tam)
 {
     int i;
@@ -143,6 +184,11 @@ int obtenerIndiceDNI(ePersona x[],int dni,int tam)
     return retorno;
 }
 
+/** \brief Borra un Alumno cargado y deja el espacio Libre para usar
+ *
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
+ */
 void borrarPersona(ePersona x[],int tam)
 {
     int aux;
@@ -175,6 +221,11 @@ void borrarPersona(ePersona x[],int tam)
     }
 }
 
+/** \brief Imprime Lista de Alumnos
+ *
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
+ */
 void imprimirLista(ePersona x[],int tam)
 {
     int i;
@@ -193,6 +244,12 @@ void imprimirLista(ePersona x[],int tam)
     getche();
 }
 
+/** \brief Ordena Estructura Por nombre y ante igualdad de nombre por DNI
+ *
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
+ *
+ */
 void ordenarLista(ePersona x[],int tam)
 {
     ePersona aux;
@@ -221,7 +278,12 @@ void ordenarLista(ePersona x[],int tam)
     }
 }
 
+/** \brief Muestra Grafico Separando grupos por edades
 
+ *
+ * \param Estructura de Alumnos cargados
+ * \param Tamaño de estructura
+ */
 void grafico(ePersona x[],int tam)
 {
     int i;
@@ -261,7 +323,12 @@ void grafico(ePersona x[],int tam)
 
 }
 
-
+/**
+ * \brief Verifica si el valor recibido es numérico
+ * \param str Array con la cadena a ser analizada
+ * \return 1 si es númerico y 0 si no lo es
+ *
+ */
 int esNumerico(char str[])
 {
     int i=0,retorno=1;
