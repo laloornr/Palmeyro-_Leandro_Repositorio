@@ -99,7 +99,7 @@ void agregarPersona(ePersona x[],int i)
     printf("\n\nIngrese DNI: ");
     fflush(stdin);
     gets(aux);
-    while(esNumerico(aux)==0 || strlen(aux)!=8)
+    while(esNumerico(aux)==0 || (strlen(aux)>8 || strlen(aux)<7))
     {
         printf("\nError DNI Invalido. Reingrese: ");
         fflush(stdin);
