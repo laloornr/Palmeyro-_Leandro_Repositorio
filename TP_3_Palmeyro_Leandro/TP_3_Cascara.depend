@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1496256099 source:d:\faculteishon\2017\programacion\tp_3_palmeyro_leandro\funciones.c
+
+1496265400 source:d:\faculteishon\2017\programacion\tp_3_palmeyro_leandro\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1496265400 d:\faculteishon\2017\programacion\tp_3_palmeyro_leandro\funciones.h
+
