@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1498514728 source:d:\palmeyro leandro\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"Arraylist.h"
+	"miLibreria.h"
+
+1498513866 source:d:\palmeyro leandro\milibreria.c
+
+1498514148 source:d:\palmeyro leandro\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1498513995 d:\palmeyro leandro\arraylist.h
+
+1498515134 d:\palmeyro leandro\milibreria.h
+
+1498514150 source:h:\palmeyro leandro2\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1499622954 h:\palmeyro leandro2\arraylist.h
+
+1499622232 source:h:\palmeyro leandro2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"Arraylist.h"
+	"miLibreria.h"
+
+1499622954 h:\palmeyro leandro2\milibreria.h
+
+1499622220 source:h:\palmeyro leandro2\milibreria.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"Arraylist.h"
+	"miLibreria.h"
+
+1499622954 source:c:\users\laloornr\desktop\palmeyro leandro2\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1499622954 c:\users\laloornr\desktop\palmeyro leandro2\arraylist.h
+
+1499622232 source:c:\users\laloornr\desktop\palmeyro leandro2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"Arraylist.h"
+	"miLibreria.h"
+
+1499882834 c:\users\laloornr\desktop\palmeyro leandro2\milibreria.h
+
+1499882801 source:c:\users\laloornr\desktop\palmeyro leandro2\milibreria.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"Arraylist.h"
+	"miLibreria.h"
+

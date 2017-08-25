@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1494290871 source:d:\palmeyro leandro\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"miLibreria.h"
+
+1494291231 d:\palmeyro leandro\milibreria.h
+
+1494291123 source:d:\palmeyro leandro\milibreria.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"miLibreria.h"
+
+1494291266 source:d:\faculteishon\2017\programacion\parciales\palmeyro leandro\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"miLibreria.h"
+
+1494291232 d:\faculteishon\2017\programacion\parciales\palmeyro leandro\milibreria.h
+
+1495390918 source:d:\faculteishon\2017\programacion\parciales\palmeyro leandro\milibreria.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"miLibreria.h"
+
